@@ -1,1 +1,1 @@
-# wordpress-woocommerce-8.3ua
+# eCommerceConnect Payment Gateway
