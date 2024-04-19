@@ -1,4 +1,4 @@
-# WooCommerce eCommerceConnect Gateway
+# Плагін eCommerceConnect для WordPress (WooCommerce вeрсії >= 8 .3 з підтримкою блоків) для України 
 
 ## Dependencies
 - Requires WordPress at least: 6.3
