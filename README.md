@@ -22,10 +22,12 @@ Go to WooCommerce > Settings and the Payments tab. Find eCommerceConnect in the 
 ![WooCommerce](image-2.png)
 2. Generate the public / private key pair with merchant crt according to the instructions from Ukrainian Processing Center
 3. Copy the PEM key file to the server:
-    Sandbox: wp-content/plugins/woocommerce-ecommerceconnect-gateway/cert/test/
-    Prod: wp-content/plugins/woocommerce-ecommerceconnect-gateway/cert/prod/
-4. Provide the *Callback URL* to the Ukrainian Processing Center to enable online payment notifications
+
+   Sandbox: wp-content/plugins/woocommerce-ecommerceconnect-gateway/cert/test/
+   Prod: wp-content/plugins/woocommerce-ecommerceconnect-gateway/cert/prod/
+   
+5. Provide the *Callback URL* to the Ukrainian Processing Center to enable online payment notifications
 ![notify url](image.png)
-5. Enable *Sandbox* mode in the plugin settings
-6. Disable *Sandbox* mode when ready to accept live payments
-7. Merchant ID, Terminal ID fields are required
+6. Enable *Sandbox* mode in the plugin settings
+7. Disable *Sandbox* mode when ready to accept live payments
+8. Merchant ID, Terminal ID fields are required
