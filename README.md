@@ -15,10 +15,10 @@ This extension is compatible with:
 Before using the extension, you need to apply for Internet acquiring from Ukrainian Processing Center
 
 ### Installation and configuration
-1. Unzip the UPC extension (wordpress-woocommerce-8.3ua .zip > Unzip) and download the folder woocommerce-ecommerceconnect-gateway manually to the wp-plugins folder. 
-Go to the admin panel.
+1. Unzip the UPC extension (wordpress-woocommerce-8.3ua .zip > Unzip) and download the folder woocommerce-ecommerceconnect-gateway manually to the wp-plugins folder.
+2. Go to the admin panel
 
-2. In the menu Plugins once downloaded, click Install and Activate the plugin eCommerceConnect Gateway
+In the menu Plugins once downloaded, click Install and Activate the plugin eCommerceConnect Gateway
 ![eCommerceConnect Gateway](image-1.png)
 
 Go to WooCommerce > Settings and the Payments tab. Find eCommerceConnect in the list of extensions and click Manage
