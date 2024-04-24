@@ -1,4 +1,4 @@
-# eCommerceConnect plugin for WordPress (WooCommerce versions >= 8.3 with block support) for Ukraine
+# eCommerceConnect plugin for WordPress (WooCommerce versions >= 8.3 with blocks support) for Ukraine
 
 ## Dependencies
 - Requires WordPress at least: 6.3
