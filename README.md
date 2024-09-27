@@ -41,7 +41,7 @@ Go to WooCommerce > Settings and the Payments tab. Find eCommerceConnect in the 
 ## How to change the status of the order after payment
 
 ### Who will be interested
-If you are looking for why your Woo store statuses after payment with this plugin are set to Completed, this is the place for you.
+If you are looking for why your Woo store order statuses after payment with this plugin are set to Completed, this is the place for you.
 
 ### Task overview
 How to change the automatic switching `of an order to the “processing” status instead of the “completed” status after a successful payment by a customer.
