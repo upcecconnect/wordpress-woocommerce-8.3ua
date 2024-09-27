@@ -43,33 +43,35 @@ Go to WooCommerce > Settings and the Payments tab. Find eCommerceConnect in the 
 ### Who will be interested
 If you are looking for why your Woo store order statuses after payment with this plugin are set to Completed, this is the place for you.
 
-### Task overview
-How to change the automatic switching `of an order to the “processing” status instead of the “completed” status after a successful payment by a customer.
-As you know from the WooCommerce documentation, by default, the order status after successful payment should be set from Pending to Processing. But this does not happen with this plugin. Instead, after a successful payment, the order status is changed from Pending to Completed.
+### Overview
+How to change the automatic switching of an order to the “processing” status instead of the “completed” status after a successful payment by a customer.
+As you know from the WooCommerce documentation, by default, the order status after successful payment should be set from Pending to Processing. But this does not happen. Instead, after a successful payment, the order status is changed from Pending to Completed.
 
 >By default, WooCommerce will only auto-complete paid orders for products that are both Virtual and Downloadable, assuming that the shop needs to fulfill/ship any orders that don’t meet these criteria.
 
 ### Why this is so
-Apparently, the developers focused on Woo stores where the products are virtual, not physical. This is convenient for virtual goods, because they do not have any stages of order fulfillment and delivery. It's impossible to provide convenience for both types of products, so they chose one.
+It's impossible to provide convenience for both types of products (completed for virtual and processing for physical), so plugin sets best one.
 
-So this is not a bug, but rather a feature for virtual goods. Although, in terms of following the best practices specified in the WooCommerce documentation, the plugin breaks the process. And this can interfere with the implementation of other plugins that rely on the standard stages of the store's order process.
+This is convenient (i.e. Order Autocomplete) for virtual goods, because they do not have any stages of order fulfillment and delivery. 
+So this is not a bug, but rather a feature for virtual goods. 
+> Although, in terms of following the best practices specified in the WooCommerce documentation, this somehow modifies the standard WooCommerce store order lifecycle. And this can logically interfere with the implementation of other plugins for physical goods.
 
 ### What to do for stores with physical goods
-Since the plugin doesn't offer any settings in this regard in the admin panel, we have to make some changes to its code.
-You need to find the `set_status()` function in the plugin code. The code looks like this:
+Since the plugin doesn't offer any settings in this regard in the admin panel, we have to make some changes to its code manually.
+We need to find the `set_status()` function in the plugin code. The code looks like this:
 
 ```php
 $order->set_status(“wc-completed”);
 ```
 
-the string value “wc-completed” must be replaced with “wc-processing”.
+the string value “wc-completed” is to be replaced with “wc-processing”.
 As a result, the line in the plugin code will look like this:				
 ```php
 $order->set_status(“wc-processing”);
 ```
 
-### We Tested in Practice
-We tested the above changes on our store in prod 
+### Tested in Practice
+As a reference example, IoT-devices, LLC have tested the above changes on their store in production 
 https://go.iot-devices.com.ua/shop
 and it works fine
 
